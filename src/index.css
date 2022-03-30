@@ -1,0 +1,161 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Cormorant Garamond', serif;
+  height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h4 {
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  align-items: center;
+}
+
+h4 svg {
+  margin-right: 5px;
+}
+
+.section-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+section {
+  padding: 10px;
+  width: 300px;
+}
+
+section li {
+  white-space: pre-wrap;
+}
+
+#root {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+#app-wrapper {
+  flex: 1 1 auto;
+  overflow: auto;
+}
+
+#app-body {
+  width: 80%;
+  margin: auto;
+}
+
+header {
+  border: 1px solid transparent;
+  background-color: #FEF6D1;
+}
+
+.contact-info {
+  display: flex;
+}
+
+.contact-info-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  white-space: pre-wrap;
+}
+
+.contact-info-item svg {
+  margin: 0 5px;
+}
+
+header h1,
+header h3 {
+  margin: 0;
+}
+
+.content-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-wrap img {
+  width: 150px;
+  margin: 10px;
+  border-radius: 100%;
+  border: 2px solid #965855;
+}
+
+header,
+footer {
+  text-align: center;
+}
+
+footer {
+  background-color: #965855;
+  color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav {
+  background-color: #965855;
+  display: flex;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0 auto;
+  display: flex;
+  padding: 0;
+}
+
+nav ul li {
+  padding: 10px 0;
+}
+
+nav ul li a {
+  padding: 10px 20px;
+  line-height: inherit;
+  background-color: #965855;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a.active, nav ul li a.active:hover, nav ul li a.active:focus {
+  background-color: #4b2c2a;
+  text-decoration: none;
+  cursor: initial;
+}
+
+nav ul li a:hover, nav ul li a:focus {
+  background-color: #4b2c2a;
+  text-decoration: underline;
+}
+
+.footer-item {
+  padding: 10px;
+}
+
+.italic {
+  font-style: italic;
+}
+
+@media screen and (max-width: 700px) {
+  #app-body {
+    width: 100%;
+  }
+
+  .contact-info {
+    margin: auto;
+    flex-direction: column;
+  }
+}
